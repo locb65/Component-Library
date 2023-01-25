@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
+
 function Button ({ icon, label, backgroundColor = 'red', size = "medium", onClick, color = 'white', border ='solid gray 2px' }) {
     let scale = 1
     if (size === 'small') scale = 0.75
