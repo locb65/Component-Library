@@ -100,8 +100,8 @@ Shopping.args = {
     color: 'black'
 }
 
-export const Submit = Template.bind({})
-Submit.args = {
+export const SubmitButton = Template.bind({})
+SubmitButton.args = {
     backgroundColor: '#d7d7d7', 
     label: 'Submit', 
     size: 'medium',

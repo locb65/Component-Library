@@ -1,5 +1,5 @@
 import TextFields from '../components/TextFields'
-import { Submit } from './Button.stories'
+import { SubmitButton } from './Button.stories'
 import React from 'react'
 
 export default {
@@ -7,22 +7,25 @@ export default {
     component: TextFields,
 }
 
-const Template = args => <TextFields {...args} />
+const Template = args => <TextFields {...args} />;
 
 
 
 export const PrimaryText = Template.bind({})
 PrimaryText.args = {
-}
+};
 
 
 export const PlaceHolderText = Template.bind({ }) 
 PlaceHolderText.args = {
     placeHolder: 'place holder'
+};
+
+export const PasswordText = Template.bind({});
+PasswordText.args = {
+    placeHolder: 'password',
 }
-
-export const SubmitText = Template.bind({ }) 
-SubmitText.args = {
-    children: <Submit {...Submit.args }/>
-    }
-
+export const UsernameText = Template.bind({});
+UsernameText.args = {
+    placeHolder: 'username',
+}
