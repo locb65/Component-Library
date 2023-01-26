@@ -1,25 +1,23 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import { useState } from 'react'
 
-function TextFields ({ padding = " 10px 25px", backgroundColor = 'white', label, border ='solid gray 1px'}) {
-    const style = {
-        border,
-        backgroundColor,
-        padding,
-        width: '200px',
-        borderRadius: '5px'
+function TextFields ({placeHolder}) {
+    const [ value, setValue] = useState ()
+    const change = event => {
+        setValue(event.target.value)
     }
+ 
     return (
-        <div className = 'TextField' style={style} > {label} </div>
+        <div className = 'TextField'> 
+        <input onChange = {change} value = {value} placeHolder = {placeHolder} />
+        </div>
         )
 }
 
 
 TextFields.propTypes ={
-label: PropTypes.string,
-backgroundColor: PropTypes.string,
-border: PropTypes.string,
-width: PropTypes.string
+placeHolder: PropTypes.string
 }
 
 export default TextFields

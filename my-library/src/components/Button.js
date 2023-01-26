@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import React from 'react';
 
 
 function Button ({ icon, label, backgroundColor = 'red', size = "medium", onClick, color = 'white', border ='solid gray 2px' }) {
@@ -15,9 +16,11 @@ function Button ({ icon, label, backgroundColor = 'red', size = "medium", onClic
             borderRadius: '10px',
         }
     return (
+    <>
         <button onClick={onClick} style ={style} >
             {icon} {label}
         </button>
+    </>
     )
 }
 

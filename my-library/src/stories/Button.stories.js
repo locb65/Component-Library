@@ -1,5 +1,6 @@
 import Button from "../components/Button"
 import './Buttons.css'
+import React from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 export default {
@@ -14,8 +15,7 @@ export const Primary = Template.bind({})
 Primary.args = {
     backgroundColor: 'Blue', 
     label: 'Click Me', 
-    size: 'medium',
-    icon: <AiOutlineShoppingCart/>
+    size: 'medium'
 }
 
 export const BorderedPrimary = Template.bind({})
@@ -88,5 +88,22 @@ BorderedDefault.args = {
     label: 'Click Me', 
     size: 'medium',
     border: 'solid 2px black',
+    color: 'black'
+}
+
+export const Shopping = Template.bind({})
+Shopping.args = {
+    backgroundColor: '#d7d7d7', 
+    label: 'Cart', 
+    size: 'medium',
+    icon: <AiOutlineShoppingCart/>,
+    color: 'black'
+}
+
+export const Submit = Template.bind({})
+Submit.args = {
+    backgroundColor: '#d7d7d7', 
+    label: 'Submit', 
+    size: 'medium',
     color: 'black'
 }
