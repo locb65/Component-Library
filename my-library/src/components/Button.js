@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types'
-import { AiOutlineShoppingCart } from "react-icons/ai";
 import React from 'react';
 
 
